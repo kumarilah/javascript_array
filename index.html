@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    
+    <script>
+        const myCars = ["Mercedez Benz", "Range Rover", "Lambo", "Ferrari"];
+        myCars[myCars.length] = "Rolls Royce";
+        let length = myCars.length;
+        let list ="<ul>";
+        for( i = 0; i < length; i++) {
+             list += `<li>${myCars[i]}</li>`;
+        }
+        list += "</ul>";
+        document.getElementById("demo").innerHTML = list;
+    </script>
+</body>
+</html>
