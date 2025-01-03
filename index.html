@@ -9,15 +9,14 @@
     <div id="demo"></div>
     
     <script>
-        const myCars = ["Mercedez Benz", "Range Rover", "Lambo", "Ferrari"];
-        myCars[myCars.length] = "Rolls Royce";
-        let length = myCars.length;
-        let list ="<ul>";
-        for( i = 0; i < length; i++) {
-             list += `<li>${myCars[i]}</li>`;
+        const myNum = [1, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        let all = "";
+        myNum.forEach(myFunction);
+        document.getElementById("demo").innerHTML = all;
+        
+        function myFunction(value, index, array) {
+            all += value + "<br>";
         }
-        list += "</ul>";
-        document.getElementById("demo").innerHTML = list;
     </script>
 </body>
 </html>
